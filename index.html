@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<LINK href="./include/styles.css" rel="stylesheet" type="text/css">
+		<title>Weather widget</title>
+		<script src="./ajax/jquery-1.10.1.min.js"></script>
+		<script src="./ajax/dynamicData.js"></script>
+		<script src="./ajax/fetchData.js"></script>
+	</head>
+	<body>
+		<div class="weatherWidget">
+			<fieldset id="widget">
+				<legend>Actual weather</legend>
+				<form action="#" method="post">
+					<div class="padding5 textLeft">
+						<label>Service:</label>
+						<select name="provider" disabled="disabled" id="providersList" class="textbox">
+							<option>Loading providers...</option>
+						</select>
+					</div>
+					<div class="padding5 textLeft">
+						<label>Country:</label><select name="country" disabled="disabled" id="countriesList" class="textbox">
+							<option>Loading countries...</option>
+						</select>
+					</div>
+					<div class="padding5 textLeft">
+						<label>City:</label><select name="city" disabled="disabled" id="citiesList" class="textbox">
+							<option>Loading cities...</option>
+						</select>
+					</div>
+				</form>
+				<table id="weather"></table>
+			</fieldset>
+		</div>
+	</body>
+</html>
